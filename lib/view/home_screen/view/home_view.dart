@@ -80,21 +80,24 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        // title: Text('Home Page'),
         automaticallyImplyLeading: false,
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              child: Text('hfdghdgfdhgkljdkjg'),
+            Center(
+              child: Text(
+                "Me' Time Coffee Shop",
+                style: TextStyle(fontSize: 24.0),
+              ),
             ),
-            SizedBox(
-              height: 200.0,
-              child: PieChart(PieChartData(
-                sections: showingSections(),
-              )),
-            ),
+            // SizedBox(
+            //   height: 200.0,
+            //   child: PieChart(PieChartData(
+            //     sections: showingSections(),
+            //   )),
+            // ),
           ],
         ),
       ),
